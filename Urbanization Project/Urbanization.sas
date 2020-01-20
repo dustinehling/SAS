@@ -50,10 +50,14 @@ ods graphics on;
 proc reg;  
 model mhomesold = mhousehold;  
 title 'mhomesold = mhousehold'; 
-run; proc reg;  
+run; 
+
+proc reg;  
 model mhomesold = mpersonal;  
 title 'mhomesold = mpersonal'; 
-run; proc reg;  
+run; 
+
+proc reg;  
 model mhomesold = mrental;  
 title 'mhomesold = mrental'; 
 run; 
